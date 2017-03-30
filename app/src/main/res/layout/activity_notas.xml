@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sm.luke.studymusic.NotasActivity">
+
+    <TextView
+        android:id="@+id/txtNomeNota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25px"
+        android:text="Nota Selecionada"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/imgNotas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25px"
+        android:src="@drawable/emptynota"
+        android:layout_below="@+id/txtNomeNota"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25px"
+        android:layout_below="@+id/imgNotas">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnDoMaior"
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:text="Dó Maior   (C)"/>
+
+            <Button
+                android:id="@+id/btnReMaior"
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:text="Ré Maior   (D)"/>
+
+            <Button
+                android:id="@+id/btnMiMaior"
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:text="Mi Maior   (E)"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnFaMaior"
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:text="Fá Maior   (F)"/>
+
+            <Button
+                android:id="@+id/btnSolMaior"
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:text="Sol Maior   (G)"/>
+
+            <Button
+                android:id="@+id/btnLaMaior"
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:text="Lá Maior   (A)"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnSiMaior"
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:text="Si Maior   (B)"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sm.luke.studymusic.EscolhaAcordeActivity">
+
+    <TextView
+        android:id="@+id/textTitulo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:padding="10px"
+        android:textSize="25sp"
+        android:text="@string/tituloescolha"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTitulo1"
+        android:layout_marginTop="30px"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnMaiores"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:drawableTop="@drawable/cima"
+            android:text="Maiores"/>
+
+        <Button
+            android:id="@+id/btnMenores"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_marginLeft="10px"
+            android:drawableTop="@drawable/baixo"
+            android:text="Menores"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
