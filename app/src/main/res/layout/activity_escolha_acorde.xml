@@ -4,41 +4,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sm.luke.studymusic.EscolhaAcordeActivity">
+    android:background="@drawable/sphereback"
+    tools:context="com.example.jdjl.e_notes.EscolhaAcordeActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="72dp"
+        android:layout_below="@+id/textTitulo1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/btnMaiores"
+            android:layout_width="200dp"
+            android:layout_height="240dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.04"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/nota1"
+            android:text="Maiores"
+            android:textColor="@android:color/background_light"
+            android:textColorHighlight="@android:color/background_light"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnMenores"
+            android:layout_width="200dp"
+            android:layout_height="240dp"
+            android:layout_gravity="bottom"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/notaa"
+            android:text="Menores"
+            android:textColor="@android:color/background_light"
+            android:textColorHighlight="@android:color/background_light"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textTitulo1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30px"
+        android:gravity="center"
         android:padding="10px"
-        android:textSize="25sp"
         android:text="@string/tituloescolha"
-        android:gravity="center"/>
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textTitulo1"
-        android:layout_marginTop="30px"
-        android:gravity="center">
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
 
         <Button
-            android:id="@+id/btnMaiores"
-            android:layout_width="300px"
-            android:layout_height="300px"
-            android:drawableTop="@drawable/cima"
-            android:text="Maiores"/>
+            android:id="@+id/btnSusMaiores"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/nota_sus1"
+            android:text="Sustenidos Maiores"
+            android:textColor="@android:color/background_light"
+            android:textColorHighlight="@android:color/background_light"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btnMenores"
-            android:layout_width="300px"
-            android:layout_height="300px"
-            android:layout_marginLeft="10px"
-            android:drawableTop="@drawable/baixo"
-            android:text="Menores"/>
+            android:id="@+id/btnSusMenores"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/nota_sus"
+            android:text="Sustenidos Menores"
+            android:textColor="@android:color/background_light"
+            android:textColorHighlight="@android:color/background_light"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
 
     </LinearLayout>
-
 </RelativeLayout>

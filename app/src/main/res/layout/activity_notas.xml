@@ -2,101 +2,140 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bac"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sm.luke.studymusic.NotasActivity">
+    android:background="@drawable/sphereback"
+    tools:context="com.example.jdjl.e_notes.NotasActivity">
 
     <TextView
         android:id="@+id/txtNomeNota"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="25px"
+        android:gravity="center"
         android:text="Nota Selecionada"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:gravity="center"/>
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imgNotas"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25px"
-        android:src="@drawable/emptynota"
-        android:layout_below="@+id/txtNomeNota"/>
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_below="@+id/txtNomeNota"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/emptynota" />
 
     <LinearLayout
-        android:orientation="vertical"
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25px"
-        android:layout_below="@+id/imgNotas">
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnDoMaior"
-                android:layout_width="250px"
-                android:layout_height="250px"
-                android:text="Dó Maior   (C)"/>
+                android:id="@+id/btnDo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/but"
+                android:text="Cm"
+                android:textColor="@android:color/black"
+                android:textColorHighlight="@android:color/background_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <Button
-                android:id="@+id/btnReMaior"
-                android:layout_width="250px"
-                android:layout_height="250px"
-                android:text="Ré Maior   (D)"/>
+                android:id="@+id/btnRe"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/but"
+                android:text="Ré(D)"
+                android:textColor="@android:color/black"
+                android:textColorHighlight="@android:color/background_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <Button
-                android:id="@+id/btnMiMaior"
-                android:layout_width="250px"
-                android:layout_height="250px"
-                android:text="Mi Maior   (E)"/>
+                android:id="@+id/btnMi"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/but"
+                android:text="Mi(E)"
+                android:textColor="@android:color/black"
+                android:textColorHighlight="@android:color/background_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnFaMaior"
-                android:layout_width="250px"
-                android:layout_height="250px"
-                android:text="Fá Maior   (F)"/>
+                android:id="@+id/btnFa"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/but"
+                android:text="Fá(F)"
+                android:textColor="@android:color/black"
+                android:textColorHighlight="@android:color/background_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <Button
-                android:id="@+id/btnSolMaior"
-                android:layout_width="250px"
-                android:layout_height="250px"
-                android:text="Sol Maior   (G)"/>
+                android:id="@+id/btnSol"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/but"
+                android:text="Sol(G)"
+                android:textColor="@android:color/black"
+                android:textColorHighlight="@android:color/background_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <Button
-                android:id="@+id/btnLaMaior"
-                android:layout_width="250px"
-                android:layout_height="250px"
-                android:text="Lá Maior   (A)"/>
+                android:id="@+id/btnLa"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/but"
+                android:text="Lá(A)"
+                android:textColor="@android:color/black"
+                android:textColorHighlight="@android:color/background_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnSiMaior"
-                android:layout_width="250px"
-                android:layout_height="250px"
-                android:text="Si Maior   (B)"/>
+                android:id="@+id/btnSi"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/but"
+                android:text="Si(B)"
+                android:textColor="@android:color/black"
+                android:textColorHighlight="@android:color/background_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
     </LinearLayout>
-
 </RelativeLayout>
